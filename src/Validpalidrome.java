@@ -1,5 +1,7 @@
+import java.util.*;
 class Solution {
-    public boolean validpalidrome(String s) {
+    public static void main(String[] args) {
+        String s = "A man, a plan, a canal: Panama";
         String ans ="";
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)>='A' && s.charAt(i)<='Z'){
@@ -19,9 +21,13 @@ class Solution {
             ans1+=ans.charAt(i);
         }
         if(ans.equals(ans1)){
-            return true;
+            //return true;
+            System.out.print(true);
+            System.exit(0);
+
         }
-        return false;
+        //return false;
+        System.out.print(false);
 
     }
 }
